@@ -10,5 +10,20 @@
   * quotaเป็น 0 ให้คืนค่า error
 
 # Output
-  * `car` จำนวนรถที่ใข้ขั้นต่ำ 
+  * `car` จำนวนรถที่ใข้ขั้นต่ำ (เศษที่เหลือต่ำกว่า 50 กก. จะถูกทิ้งไว้)
   * `cost` ค่าจ้างคนงาน
+
+# Function
+```python
+def Mining(ore,quota):
+    return car,cost
+```
+# Example 01
+### Input
+```python
+Mining(32050,32000)
+```
+### Output
+```python
+32
+160500
