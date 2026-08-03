@@ -25,5 +25,14 @@
 
 # Function
 ```python
-def ThermoMiner(d, e):
+def ThermoMiner(deep, energy):
     return result
+
+# Example 01
+### Input
+```python
+ThermoMiner(6,100)
+```
+### Output
+```python
+Success
