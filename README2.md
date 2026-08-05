@@ -1,15 +1,6 @@
-# ⚙️ Advanced Conveyor Belt: สายพานคัดแยกแร่ขั้นสูง
+#  Advanced Conveyor Belt: สายพานคัดแยกแร่ขั้นสูง
 
-> **Coding Challenge:** ระบบสายพานคัดแยกแร่ขั้นสูง (Data Structure & List Manipulation)
-
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Difficulty](https://img.shields.io/badge/Difficulty-Gold-FFD700?style=for-the-badge)
-
----
-
-## 📜 เนื้อเรื่อง (Problem Story)
-
-โรงหลอมของคุณได้รับการอัปเกรดสายพานใหม่ แร่ยังคงเข้ามาตามคิว (**First-In, First-Out: FIFO**) แต่คราวนี้ระบบสายพานสามารถรับแร่ได้ทีละหลายก้อนพร้อมกัน แถมยังมีระบบสลับทิศทางและเครื่องอัปเกรดแร่ด้วย! 
+โรงหลอมได้รับการอัปเกรดสายพานใหม่ แร่ยังคงเข้ามาตามคิว แต่คราวนี้ระบบสายพานสามารถรับแร่ได้ทีละหลายก้อนพร้อมกัน แถมยังมีระบบสลับทิศทางและเครื่องอัปเกรดแร่ด้วย! 
 
 ### 💎 มูลค่าแร่ (Ore Values)
 | ชนิดแร่ (Ore) | มูลค่า (Value) | การอัปเกรดถัดไป (Upgrade To) |
