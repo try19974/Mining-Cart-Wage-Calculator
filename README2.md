@@ -53,15 +53,11 @@ def process_conveyor(commands):
 ### Input
 ```python
 process_conveyor(["Add Coal Diamond", "Upgrade", "Reverse", "Smelt 1"])
-เริ่ม: คิวว่าง [] เงิน = 0
-
-Add Coal Diamond: คิวเป็น [Coal, Diamond]
-
-Upgrade: อัปเกรดหัวคิว Coal ➔ Iron คิวจะเป็น [Iron, Diamond]
-
-Reverse: สลับทิศทางสายพาน คิวจะเป็น [Diamond, Iron]
-
-Smelt 1: หลอมหัวคิวคือ Diamond (500$)
+#เริ่ม: คิวว่าง [] เงิน = 0
+#Add Coal Diamond: คิวเป็น [Coal, Diamond]
+#Upgrade: อัปเกรดหัวคิว Coal ➔ Iron คิวจะเป็น [Iron, Diamond]
+#Reverse: สลับทิศทางสายพาน คิวจะเป็น [Diamond, Iron]
+#Smelt 1: หลอมหัวคิวคือ Diamond (500$)
 ```
 ### Output
 ```python
