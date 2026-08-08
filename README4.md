@@ -58,8 +58,40 @@
 
 ---
 
+
+
 ## 💻 Function Template
 
 ```python
 def exploremine(mine_path, energy, pickaxe):
     return 1
+```
+## 💡 Example  
+
+**Input**  
+```python
+exploremine("DDRBMG", 10, "Wood")
+# เริ่ม: พลังงาน = 10, เงิน = 0, ที่ขุด = Wood (ขุดหินได้ 2 ครั้ง)
+# D (ดิน) -> พลังงาน -1 (เหลือ 9)
+# D (ดิน) -> พลังงาน -1 (เหลือ 8)
+# R (หิน) -> พลังงาน -2 (เหลือ 6) | ไม้ขุดหินไป 1 ก้อน (เหลือ 1)
+# B (ระเบิด) -> ข้ามบล็อกถัดไป
+# M (มอนสเตอร์) -> โดนข้าม! ไม่เกิดอะไรขึ้น ไม่เสียเลือด ไม่เสียเงิน
+# G (ทอง) -> พลังงาน -1 (เหลือ 5) | ได้เงิน 50$
+# จบเหมือง: ทะลุ string โดยที่พลังงานเหลือ 5, เงิน 50, ที่ขุดยังไม่พัง
+```
+
+**Output**
+```python
+[50, 5, False] 
+```
+
+## ▶️ To Run a Test Case  
+
+Edit your answer in `Question.py`, then press **Run** in Moodle (VPL).
+The server runs the test cases and shows the results.
+
+## 🚨 Importance  
+
+⚠️ **Always save/submit your latest code in Moodle before leaving the exam room!**  
+🚀 This ensures your latest work is saved and reviewed correctly.
