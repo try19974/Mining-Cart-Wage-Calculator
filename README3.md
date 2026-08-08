@@ -1,5 +1,4 @@
-# 🤖 Mining Robot
-
+## 🤖 Mining Robot
 พี่สร้างหุ่นยนต์ขุดแร่ที่รับคำสั่งเป็นตัวเลขโค้ดเพียง 1 ชุด (เช่น `483315`) หุ่นยนต์จะต้องอ่านโค้ดนี้จาก **ขวาไปซ้าย** ทีละ 2 หลัก เพื่อดำเนินการขุดแร่จำนวน `N` ครั้ง หากแบตเตอรี่ลดลงจน **น้อยกว่า 0** หุ่นยนต์จะดับทันที! คุณต้องคำนวณว่าหุ่นยนต์จะได้แร่มูลค่ารวมเท่าไหร่ หรือพังไปในรอบที่เท่าไหร่
 
 ---
@@ -31,39 +30,46 @@
 ### 🚫 ข้อยกเว้นและข้อจำกัด (Constraints)
 * หากแบตเตอรี่เป็นเท่ากับหรือน้อยกว่า0 ให้ถือว่าหุ่นยนต์พังและหยุดการทำงานทันที
 
----
-
-## 📥 Input & Output
-
-### **Input**
-ฟังก์ชันรับพารามิเตอร์ 3 ตัว:
+## 📥Input(s)
 * `n` : จำนวนรอบที่หุ่นยนต์ต้องขุด (`int`)
 * `energy` : พลังงานแบตเตอรี่เริ่มต้น (`int`)
 * `sequence` : ชุดตัวเลขคำสั่งที่เรียงต่อกัน (`int`)
 
-### **Output**
+## 📤Output(s)
 คืนค่าข้อมูลเป็น **ตัวเลข 1 ค่า** (`int`):
 * **หากแบตเตอรี่เป็นเท่ากับหรือน้อยกว่า0** : ให้คืนค่าเป็น `-X` *(โดย X คือรอบที่หุ่นยนต์พัง เช่น พังในรอบที่ 2 ให้คืนค่า `-2`)*
 * **หากทำงานรอดครบ `N` รอบ** : ให้คืนค่าเป็น **มูลค่าแร่รวมทั้งหมด** (Total Value) ที่ขุดได้
 
----
+## ⚙️Function
 
-## 💻 Function Template
-
+The function is defined in the file `MiningRobot.py` 
 ```python
-def mining_robot(n, energy, sequence):
-    return result
+def MiningRobot(n, energy, sequence):
+    return 1
 ```
-# Example 01
-### Input
+
+## 💡 Example  
+
+**Input**  
 ```python
-miningrobot(3, 30, 483315)
+MiningrRobot(3, 30, 483315)
 # เริ่ม: ขุด 3 รอบ, พลังงาน = 30, โค้ด = 483315
 # รอบ 1: ดึง 5 (หิน), ดึง 1 (แร่) ➔ หักพลังงาน 10 + (5%3) = 12 ➔ พลังงานเหลือ 18 | เงินสะสม = 50
 # รอบ 2: ดึง 3 (หิน), ดึง 3 (แร่) ➔ หักพลังงาน 5 + (3%3) = 5 ➔ พลังงานเหลือ 13 | เงินสะสม = 50 + 15 = 65
 # รอบ 3: ดึง 8 (หิน), ดึง 4 (แร่) ➔ หักพลังงาน 2 + (8%3) = 4 ➔ พลังงานเหลือ 9 | เงินสะสม = 65 + 0 = 65
 ```
-### Output
+
+**Output**
 ```python
 65
+```
 
+## ▶️ To Run a Test Case  
+
+Edit your answer in `Question.py`, then press **Run** in Moodle (VPL).
+The server runs the test cases and shows the results.
+
+## 🚨 Importance  
+
+⚠️ **Always save/submit your latest code in Moodle before leaving the exam room!**  
+🚀 This ensures your latest work is saved and reviewed correctly.
