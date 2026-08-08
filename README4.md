@@ -46,18 +46,20 @@
 * `mine_path` : แผนผังเหมืองแบบ 1 มิติเรียงจากซ้ายไปขวา (`str`) เช่น `"DDRGCSMBR"`
 * `energy` : พลังงานเริ่มต้นที่เป็นค่าบวก (`int`)
 * `pickaxe` : ชนิดของที่ขุดแร่ (`str`) มี 3 ค่าคือ `"Wood"`, `"Iron"`, `"Diamond"`
+### ยกเว้น
+*mine_path เป็นstringเปล่าตั่งแต่เริ่มให้คืนค่า 'error'
+*energy เป็น 0 ตั่งแต่เริ่มคืนค่า 'error'
 
 ### 🔹 Output
 คืนค่าข้อมูล 3 ตัวในรูปแบบ **List** `[total_coins, energy_left, is_broken]`:
 1. `total_coins` : จำนวนเงินรวมที่เก็บได้ (`int`)
 2. `energy_left` : พลังงานที่เหลืออยู่เมื่อจบการสำรวจ (`int`)
-3. `is_broken` : สถานะที่ขุดแร่ว่าพังหรือไม่ (`bool`) *(หมายเหตุ: เพชรไม่มีวันพัง ให้คืนค่า `False` เสมอ)*
+3. `is_broken` : สถานะที่ขุดแร่ว่าพังหรือไม่ (`bool`) *(พังเป็น'True' ไม่พังเป็น'False')*
 
 ---
 
 ## 💻 Function Template
 
 ```python
-def explore_mine(mine_path, energy, pickaxe):
-    # เขียนโค้ดของคุณที่นี่
-    return [total_coins, energy_left, is_broken]
+def exploremine(mine_path, energy, pickaxe):
+    return 1
